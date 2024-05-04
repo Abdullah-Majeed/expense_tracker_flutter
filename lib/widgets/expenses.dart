@@ -3,7 +3,6 @@ import 'package:expense_tracker/models/expense.dart';
 import 'package:expense_tracker/widgets/new_expense.dart';
 import 'package:flutter/material.dart';
 import 'package:expense_tracker/widgets/chart/chart.dart';
-import 'package:flutter/widgets.dart';
 
 class Expenses extends StatefulWidget {
   const Expenses({super.key});
@@ -81,6 +80,7 @@ class _ExpensesState extends State<Expenses> {
     }
     return Scaffold(
       appBar: AppBar(
+        centerTitle: false,
         title: const Text('Flutter ExpenseTracker'),
         actions: [
           IconButton(
